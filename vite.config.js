@@ -1,5 +1,10 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    root: "src"
+    root: "src",
+    base: "/tvshows/",
+    build: {
+        outDir: "../dist",
+        emptyOutDir: true
+    }
 });
